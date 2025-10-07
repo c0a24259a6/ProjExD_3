@@ -154,6 +154,10 @@ class Score:
         self.rct.center = 100, 600
 
     def update(self, screen: pg.Surface):
+        """
+        今のスコアを表示させる
+        引数 screen：画面Surface
+        """
         self.font = self.fonto.render(f"score:{self.value}", 0, (0, 0, 255))
         screen.blit(self.font, self.rct)
 
